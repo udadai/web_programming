@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Book Cover</title>
+        <style type="text/css">
+            input
+            {
+                width: 400px;
+                height: 35px;
+            }
+            button
+            {
+                width: 150px;
+                height: 30px;
+                background-color: lightgray;
+                border: none;
+                color: white;
+            }
+            body
+            {
+                text-align: center;
+            }
+            select
+            {
+                width: 405px;
+                height: 40px;
+            }
+            img
+            {
+                width: 250px;
+            }
+        </style>
+        <script src="bookcover.js"></script>
+    </head>
+    <body>
+        <div>
+            <h2><strong>책 표지 만들기</strong></h2>
+            <form name="book" action = "#">
+                <p>
+                    <input name="title" id="title" placeholder="제목 입력" type = "text" size = "40">
+                </p>
+                <p>
+                    <input name="comments" id="comments" placeholder="설명 입력" type = "text" size = "40">
+                </p>
+                <p>
+                    <select name="publisher" id="publisher" width="40">
+                        <option selected>부산출판사</option>
+                        <option>금정출판사</option>
+                        <option>장전출판사</option>
+                    </select>
+                 </p>
+                <p>
+                    <input name="authors" id="authors" placeholder="저자 입력" type = "text" size = "40">
+                </p>
+                <button id = "printBookCover" type = "button">책 표지 출력</button>
+                <button id = "clear" type="reset" onclick="Disappear()">초기화</button>
+            </form>
+            <div id="BookCover" style="display: inline-block;"></div>
+    </body>
+</html>
